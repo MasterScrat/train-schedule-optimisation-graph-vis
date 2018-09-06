@@ -51,16 +51,17 @@
             sortMethod: 'directed',
           },
         },
-        'physics': {
+        /*'physics': {
           stabilization: {
             iterations: 3,
             updateInterval: 1,
           },
-        },
+        },*/
+
         'configure': {
           'enabled': true,
           'container': $('#config').get(0),
-          'filter': 'physics'
+          'filter': 'physics',
         },
       }
 
@@ -81,10 +82,12 @@
             layout: {hierarchical: false},
             'physics': {
               'barnesHut': {
-                'gravitationalConstant': -300000,
-                'centralGravity': 0.65,
-                'damping': 0.1,
-                'avoidOverlap': 1,
+                'gravitationalConstant': -110920,
+                'centralGravity': 5,
+                'springLength': 30,
+                'springConstant': 0.6,
+                'damping': 0.4,
+                'avoidOverlap': 0.28,
               },
               'minVelocity': 0.75,
               'timestep': 0.6,
