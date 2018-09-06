@@ -1,0 +1,510 @@
+{
+    "nodes": [
+        {
+            "id": "111(1_beginning)",
+            "label": "(1_beginning)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(M1)",
+            "label": "(M1)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(4->5)",
+            "label": "(4->5)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(M2)",
+            "label": "(M2)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(M3)",
+            "label": "(M3)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(10->13)",
+            "label": "(10->13)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(M4)",
+            "label": "(M4)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(14_end)",
+            "label": "(14_end)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(2_beginning)",
+            "label": "(2_beginning)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(3_beginning)",
+            "label": "(3_beginning)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(7->8)",
+            "label": "(7->8)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(8->9)",
+            "label": "(8->9)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(9_end)",
+            "label": "(9_end)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "111(11->12)",
+            "label": "(11->12)",
+            "color": "#208b22",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(1_beginning)",
+            "label": "(1_beginning)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(M1)",
+            "label": "(M1)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(4->5)",
+            "label": "(4->5)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(M2)",
+            "label": "(M2)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(M3)",
+            "label": "(M3)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(10->13)",
+            "label": "(10->13)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(M4)",
+            "label": "(M4)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(14_end)",
+            "label": "(14_end)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(2_beginning)",
+            "label": "(2_beginning)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(3_beginning)",
+            "label": "(3_beginning)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(7->8)",
+            "label": "(7->8)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(8->9)",
+            "label": "(8->9)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(9_end)",
+            "label": "(9_end)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        },
+        {
+            "id": "113(11->12)",
+            "label": "(11->12)",
+            "color": "#11ec74",
+            "shape": "ellipsis"
+        }
+    ],
+    "edges": [
+        {
+            "label": "1",
+            "from": "111(1_beginning)",
+            "to": "111(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "4",
+            "from": "111(M1)",
+            "to": "111(4->5)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "5",
+            "from": "111(4->5)",
+            "to": "111(M2)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "6",
+            "from": "111(M2)",
+            "to": "111(M3)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "10",
+            "from": "111(M3)",
+            "to": "111(10->13)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "13",
+            "from": "111(10->13)",
+            "to": "111(M4)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "14",
+            "from": "111(M4)",
+            "to": "111(14_end)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "2",
+            "from": "111(2_beginning)",
+            "to": "111(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "3",
+            "from": "111(3_beginning)",
+            "to": "111(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "7",
+            "from": "111(M2)",
+            "to": "111(7->8)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "8",
+            "from": "111(7->8)",
+            "to": "111(8->9)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "9",
+            "from": "111(8->9)",
+            "to": "111(9_end)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "11",
+            "from": "111(M3)",
+            "to": "111(11->12)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "12",
+            "from": "111(11->12)",
+            "to": "111(M4)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "1",
+            "from": "113(1_beginning)",
+            "to": "113(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "4",
+            "from": "113(M1)",
+            "to": "113(4->5)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "5",
+            "from": "113(4->5)",
+            "to": "113(M2)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "6",
+            "from": "113(M2)",
+            "to": "113(M3)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "10",
+            "from": "113(M3)",
+            "to": "113(10->13)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "13",
+            "from": "113(10->13)",
+            "to": "113(M4)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "14",
+            "from": "113(M4)",
+            "to": "113(14_end)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "2",
+            "from": "113(2_beginning)",
+            "to": "113(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "3",
+            "from": "113(3_beginning)",
+            "to": "113(M1)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "7",
+            "from": "113(M2)",
+            "to": "113(7->8)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "8",
+            "from": "113(7->8)",
+            "to": "113(8->9)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "9",
+            "from": "113(8->9)",
+            "to": "113(9_end)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "11",
+            "from": "113(M3)",
+            "to": "113(11->12)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        },
+        {
+            "label": "12",
+            "from": "113(11->12)",
+            "to": "113(M4)",
+            "arrows": {
+                "to": {
+                    "enabled": true,
+                    "scaleFactor": 3
+                }
+            },
+            "width": 5
+        }
+    ]
+}

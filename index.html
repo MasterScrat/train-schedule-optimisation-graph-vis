@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+    <title>Network Vis</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://visjs.org/dist/vis.js"></script>
+    <!--<script src="01_dummy.js"></script>-->
+    <link href="http://visjs.org/dist/vis-network.min.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        #mynetwork {
+            width: 600px;
+            height: 400px;
+            border: 1px solid lightgray;
+            min-height: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #config {
+            position: absolute;
+            float: left;
+            width: 200px;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="config"></div>
+
+<div id="mynetwork" style="width: 100%; height: 100%; min-height: 100%; "></div>
+
+<script type="text/javascript">
+  window.onload = function () {
+    var container = document.getElementById('mynetwork')
+
+    $.getJSON('network1.json', function (networkData) {
+      var data = {
+        nodes: networkData.nodes,
+        edges: networkData.edges,
+      }
+
+      var options = {
+        'layout': {
+          'hierarchical': {
+            'enabled': true,
+            sortMethod: 'directed',
+          },
+        },
+        'physics': {
+          stabilization: {
+            iterations: 3,
+            updateInterval: 1,
+          },
+        },
+      }
+
+      var network = new vis.Network(container, data, options)
+      /*network.setOptions({
+        edges: {hidden: true, smooth: false}
+      })*/
+
+      network.on('stabilizationIterationsDone', function () {
+
+        console.log('Ready for physics!')
+        //return
+
+        setTimeout(function () {
+          network.setOptions({
+            //edges: {hidden: true},
+            //nodes: {hidden: true},
+            layout: {hierarchical: false},
+            'physics': {
+              'barnesHut': {
+                'gravitationalConstant': -300000,
+                'centralGravity': 0.65,
+                'damping': 0.1,
+                'avoidOverlap': 1,
+              },
+              'minVelocity': 0.75,
+              'timestep': 0.6,
+            },
+          })
+        }, 500)
+
+        setTimeout(function () {
+          network.setOptions({
+            edges: {hidden: false},
+            nodes: {hidden: false},
+          })
+        }, 150 * 1000)
+
+        /*var damping = 0.01
+        setInterval(function() {
+          damping += 0.0005
+          //console.log(damping)
+          network.setOptions({
+            "physics": {
+              "barnesHut": {
+                "damping": damping
+              }
+            }
+          })
+        }, 500)*/
+      })
+    })
+
+    /*var clusterIndex = 0;
+    var clusters = [];
+    var lastClusterZoomLevel = 0;
+    var clusterFactor = 0.9;
+
+    // set the first initial zoom level
+    network.once('initRedraw', function() {
+      if (lastClusterZoomLevel === 0) {
+        lastClusterZoomLevel = network.getScale();
+      }
+    });
+
+    // we use the zoom event for our clustering
+    network.on('zoom', function (params) {
+      if (params.direction == '-') {
+        if (params.scale < lastClusterZoomLevel*clusterFactor) {
+          makeClusters(params.scale);
+          lastClusterZoomLevel = params.scale;
+        }
+      }
+      else {
+        openClusters(params.scale);
+      }
+    });
+
+    // if we click on a node, we want to open it up!
+    network.on("selectNode", function (params) {
+      if (params.nodes.length == 1) {
+        if (network.isCluster(params.nodes[0]) == true) {
+          network.openCluster(params.nodes[0])
+        }
+      }
+    });
+
+
+    // make the clusters
+    function makeClusters(scale) {
+      var clusterOptionsByData = {
+        processProperties: function (clusterOptions, childNodes) {
+          clusterIndex = clusterIndex + 1;
+          var childrenCount = 0;
+          for (var i = 0; i < childNodes.length; i++) {
+            childrenCount += childNodes[i].childrenCount || 1;
+          }
+          clusterOptions.childrenCount = childrenCount;
+          clusterOptions.label = "# " + childrenCount + "";
+          clusterOptions.font = {size: childrenCount*5+30}
+          clusterOptions.id = 'cluster:' + clusterIndex;
+          clusters.push({id:'cluster:' + clusterIndex, scale:scale});
+          return clusterOptions;
+        },
+        clusterNodeProperties: {borderWidth: 3, shape: 'database', font: {size: 30}}
+      }
+      console.log(clusterOptionsByData)
+      //network.clusterOutliers(clusterOptionsByData);
+      network.clusterByHubsize();
+    }
+
+    // open them back up!
+    function openClusters(scale) {
+      var newClusters = [];
+      var declustered = false;
+      for (var i = 0; i < clusters.length; i++) {
+        if (clusters[i].scale < scale) {
+          network.openCluster(clusters[i].id);
+          lastClusterZoomLevel = scale;
+          declustered = true;
+        }
+        else {
+          newClusters.push(clusters[i])
+        }
+      }
+      clusters = newClusters;
+    }*/
+  }
+</script>
+
+
+</body>
+</html>
