@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>Network Vis</title>
+    <title>Train Schedule Optimisation Challenge - Network Visualisation</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://visjs.org/dist/vis.js"></script>
-    <!--<script src="01_dummy.js"></script>-->
     <link href="http://visjs.org/dist/vis-network.min.css" rel="stylesheet" type="text/css"/>
 
     <style type="text/css">
@@ -57,6 +56,11 @@
             iterations: 3,
             updateInterval: 1,
           },
+        },
+        'configure': {
+          'enabled': true,
+          'container': $('#config').get(0),
+          'filter': 'physics'
         },
       }
 

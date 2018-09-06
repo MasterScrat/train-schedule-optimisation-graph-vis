@@ -1,510 +1,856 @@
 {
     "nodes": [
         {
-            "id": "111(1_beginning)",
-            "label": "(1_beginning)",
-            "color": "#208b22",
-            "shape": "ellipsis"
+            "color": "red",
+            "shape": "box",
+            "id": "B_sm",
+            "label": "B"
         },
         {
-            "id": "111(M1)",
-            "label": "(M1)",
-            "color": "#208b22",
-            "shape": "ellipsis"
+            "color": "blue",
+            "shape": "circle",
+            "id": "C2_ro",
+            "label": "C2"
         },
         {
-            "id": "111(4->5)",
-            "label": "(4->5)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(M2)",
-            "label": "(M2)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(M3)",
-            "label": "(M3)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(10->13)",
-            "label": "(10->13)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(M4)",
-            "label": "(M4)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(14_end)",
-            "label": "(14_end)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(2_beginning)",
-            "label": "(2_beginning)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(3_beginning)",
-            "label": "(3_beginning)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(7->8)",
-            "label": "(7->8)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(8->9)",
-            "label": "(8->9)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(9_end)",
-            "label": "(9_end)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "111(11->12)",
-            "label": "(11->12)",
-            "color": "#208b22",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(1_beginning)",
-            "label": "(1_beginning)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(M1)",
-            "label": "(M1)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(4->5)",
-            "label": "(4->5)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(M2)",
-            "label": "(M2)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(M3)",
-            "label": "(M3)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(10->13)",
-            "label": "(10->13)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(M4)",
-            "label": "(M4)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(14_end)",
-            "label": "(14_end)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(2_beginning)",
-            "label": "(2_beginning)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(3_beginning)",
-            "label": "(3_beginning)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(7->8)",
-            "label": "(7->8)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
-            "id": "113(8->9)",
-            "label": "(8->9)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
-        },
-        {
+            "color": "#157daf",
+            "shape": "ellipsis",
             "id": "113(9_end)",
-            "label": "(9_end)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
+            "label": "(9_end)"
         },
         {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(14_end)",
+            "label": "(14_end)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
             "id": "113(11->12)",
-            "label": "(11->12)",
-            "color": "#11ec74",
-            "shape": "ellipsis"
+            "label": "(11->12)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "A1_ro",
+            "label": "A1"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(M1)",
+            "label": "(M1)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(4->5)",
+            "label": "(4->5)"
+        },
+        {
+            "color": "red",
+            "shape": "box",
+            "id": "A_sm",
+            "label": "A"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "YC_ro",
+            "label": "YC"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(3_beginning)",
+            "label": "(3_beginning)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "XY_2_ro",
+            "label": "XY_2"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(M2)",
+            "label": "(M2)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "C1_ro",
+            "label": "C1"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "BX_2_ro",
+            "label": "BX_2"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "A3_ro",
+            "label": "A3"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(7->8)",
+            "label": "(7->8)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "BX_1_ro",
+            "label": "BX_1"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "B_ro",
+            "label": "B"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(4->5)",
+            "label": "(4->5)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(2_beginning)",
+            "label": "(2_beginning)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(7->8)",
+            "label": "(7->8)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(1_beginning)",
+            "label": "(1_beginning)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(3_beginning)",
+            "label": "(3_beginning)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(1_beginning)",
+            "label": "(1_beginning)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(M4)",
+            "label": "(M4)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "AB_ro",
+            "label": "AB"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(8->9)",
+            "label": "(8->9)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(8->9)",
+            "label": "(8->9)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(M2)",
+            "label": "(M2)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(M1)",
+            "label": "(M1)"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(11->12)",
+            "label": "(11->12)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "A2_ro",
+            "label": "A2"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(M3)",
+            "label": "(M3)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(M3)",
+            "label": "(M3)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "XC_ro",
+            "label": "XC"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(10->13)",
+            "label": "(10->13)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(2_beginning)",
+            "label": "(2_beginning)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(10->13)",
+            "label": "(10->13)"
+        },
+        {
+            "color": "red",
+            "shape": "box",
+            "id": "C_sm",
+            "label": "C"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(14_end)",
+            "label": "(14_end)"
+        },
+        {
+            "color": "#157daf",
+            "shape": "ellipsis",
+            "id": "113(M4)",
+            "label": "(M4)"
+        },
+        {
+            "color": "blue",
+            "shape": "circle",
+            "id": "XY_1_ro",
+            "label": "XY_1"
+        },
+        {
+            "color": "#64425e",
+            "shape": "ellipsis",
+            "id": "111(9_end)",
+            "label": "(9_end)"
         }
     ],
     "edges": [
         {
-            "label": "1",
+            "to": "111(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "A1_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M1)",
             "from": "111(1_beginning)",
-            "to": "111(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "1"
         },
         {
-            "label": "4",
-            "from": "111(M1)",
             "to": "111(4->5)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "AB_ro",
+            "dashes": "true"
         },
         {
-            "label": "5",
-            "from": "111(4->5)",
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(4->5)",
+            "from": "111(M1)",
+            "width": 5,
+            "label": "4"
+        },
+        {
             "to": "111(M2)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "B_sm",
+            "dashes": "true"
         },
         {
-            "label": "6",
-            "from": "111(M2)",
+            "to": "111(M2)",
+            "from": "B_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M2)",
+            "from": "111(4->5)",
+            "width": 5,
+            "label": "5"
+        },
+        {
             "to": "111(M3)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "BX_1_ro",
+            "dashes": "true"
         },
         {
-            "label": "10",
-            "from": "111(M3)",
-            "to": "111(10->13)",
             "arrows": {
                 "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
+                    "scaleFactor": 3,
+                    "enabled": true
                 }
             },
-            "width": 5
-        },
-        {
-            "label": "13",
-            "from": "111(10->13)",
-            "to": "111(M4)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "14",
-            "from": "111(M4)",
-            "to": "111(14_end)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "2",
-            "from": "111(2_beginning)",
-            "to": "111(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "3",
-            "from": "111(3_beginning)",
-            "to": "111(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "7",
+            "to": "111(M3)",
             "from": "111(M2)",
-            "to": "111(7->8)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "6"
         },
         {
-            "label": "8",
-            "from": "111(7->8)",
-            "to": "111(8->9)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "to": "111(10->13)",
+            "from": "XY_1_ro",
+            "dashes": "true"
         },
         {
-            "label": "9",
-            "from": "111(8->9)",
-            "to": "111(9_end)",
             "arrows": {
                 "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
+                    "scaleFactor": 3,
+                    "enabled": true
                 }
             },
-            "width": 5
-        },
-        {
-            "label": "11",
+            "to": "111(10->13)",
             "from": "111(M3)",
-            "to": "111(11->12)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "10"
         },
         {
-            "label": "12",
-            "from": "111(11->12)",
             "to": "111(M4)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "YC_ro",
+            "dashes": "true"
         },
         {
-            "label": "1",
+            "to": "111(M4)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M4)",
+            "from": "111(10->13)",
+            "width": 5,
+            "label": "13"
+        },
+        {
+            "to": "111(14_end)",
+            "from": "C_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "111(14_end)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(14_end)",
+            "from": "111(M4)",
+            "width": 5,
+            "label": "14"
+        },
+        {
+            "to": "111(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "A2_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M1)",
+            "from": "111(2_beginning)",
+            "width": 5,
+            "label": "2"
+        },
+        {
+            "to": "111(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "A3_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M1)",
+            "from": "111(3_beginning)",
+            "width": 5,
+            "label": "3"
+        },
+        {
+            "to": "111(7->8)",
+            "from": "BX_2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(7->8)",
+            "from": "111(M2)",
+            "width": 5,
+            "label": "7"
+        },
+        {
+            "to": "111(8->9)",
+            "from": "XC_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(8->9)",
+            "from": "111(7->8)",
+            "width": 5,
+            "label": "8"
+        },
+        {
+            "to": "111(9_end)",
+            "from": "C_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "111(9_end)",
+            "from": "C2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(9_end)",
+            "from": "111(8->9)",
+            "width": 5,
+            "label": "9"
+        },
+        {
+            "to": "111(11->12)",
+            "from": "XY_2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(11->12)",
+            "from": "111(M3)",
+            "width": 5,
+            "label": "11"
+        },
+        {
+            "to": "111(M4)",
+            "from": "YC_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "111(M4)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "111(M4)",
+            "from": "111(11->12)",
+            "width": 5,
+            "label": "12"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A1_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(M1)",
             "from": "113(1_beginning)",
-            "to": "113(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "1"
         },
         {
-            "label": "4",
-            "from": "113(M1)",
             "to": "113(4->5)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "AB_ro",
+            "dashes": "true"
         },
         {
-            "label": "5",
-            "from": "113(4->5)",
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(4->5)",
+            "from": "113(M1)",
+            "width": 5,
+            "label": "4"
+        },
+        {
             "to": "113(M2)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "B_sm",
+            "dashes": "true"
         },
         {
-            "label": "6",
-            "from": "113(M2)",
+            "to": "113(M2)",
+            "from": "B_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(M2)",
+            "from": "113(4->5)",
+            "width": 5,
+            "label": "5"
+        },
+        {
             "to": "113(M3)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "from": "BX_1_ro",
+            "dashes": "true"
         },
         {
-            "label": "10",
-            "from": "113(M3)",
-            "to": "113(10->13)",
             "arrows": {
                 "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
+                    "scaleFactor": 3,
+                    "enabled": true
                 }
             },
-            "width": 5
-        },
-        {
-            "label": "13",
-            "from": "113(10->13)",
-            "to": "113(M4)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "14",
-            "from": "113(M4)",
-            "to": "113(14_end)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "2",
-            "from": "113(2_beginning)",
-            "to": "113(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "3",
-            "from": "113(3_beginning)",
-            "to": "113(M1)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
-        },
-        {
-            "label": "7",
+            "to": "113(M3)",
             "from": "113(M2)",
-            "to": "113(7->8)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "6"
         },
         {
-            "label": "8",
-            "from": "113(7->8)",
-            "to": "113(8->9)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "to": "113(10->13)",
+            "from": "XY_1_ro",
+            "dashes": "true"
         },
         {
-            "label": "9",
-            "from": "113(8->9)",
-            "to": "113(9_end)",
             "arrows": {
                 "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
+                    "scaleFactor": 3,
+                    "enabled": true
                 }
             },
-            "width": 5
-        },
-        {
-            "label": "11",
+            "to": "113(10->13)",
             "from": "113(M3)",
-            "to": "113(11->12)",
-            "arrows": {
-                "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
-                }
-            },
-            "width": 5
+            "width": 5,
+            "label": "10"
         },
         {
-            "label": "12",
-            "from": "113(11->12)",
             "to": "113(M4)",
+            "from": "YC_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M4)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
             "arrows": {
                 "to": {
-                    "enabled": true,
-                    "scaleFactor": 3
+                    "scaleFactor": 3,
+                    "enabled": true
                 }
             },
-            "width": 5
+            "to": "113(M4)",
+            "from": "113(10->13)",
+            "width": 5,
+            "label": "13"
+        },
+        {
+            "to": "113(14_end)",
+            "from": "C_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "113(14_end)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(14_end)",
+            "from": "113(M4)",
+            "width": 5,
+            "label": "14"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A2_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(M1)",
+            "from": "113(2_beginning)",
+            "width": 5,
+            "label": "2"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "A3_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M1)",
+            "from": "AB_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(M1)",
+            "from": "113(3_beginning)",
+            "width": 5,
+            "label": "3"
+        },
+        {
+            "to": "113(7->8)",
+            "from": "BX_2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(7->8)",
+            "from": "113(M2)",
+            "width": 5,
+            "label": "7"
+        },
+        {
+            "to": "113(8->9)",
+            "from": "XC_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(8->9)",
+            "from": "113(7->8)",
+            "width": 5,
+            "label": "8"
+        },
+        {
+            "to": "113(9_end)",
+            "from": "C_sm",
+            "dashes": "true"
+        },
+        {
+            "to": "113(9_end)",
+            "from": "C2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(9_end)",
+            "from": "113(8->9)",
+            "width": 5,
+            "label": "9"
+        },
+        {
+            "to": "113(11->12)",
+            "from": "XY_2_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(11->12)",
+            "from": "113(M3)",
+            "width": 5,
+            "label": "11"
+        },
+        {
+            "to": "113(M4)",
+            "from": "YC_ro",
+            "dashes": "true"
+        },
+        {
+            "to": "113(M4)",
+            "from": "C1_ro",
+            "dashes": "true"
+        },
+        {
+            "arrows": {
+                "to": {
+                    "scaleFactor": 3,
+                    "enabled": true
+                }
+            },
+            "to": "113(M4)",
+            "from": "113(11->12)",
+            "width": 5,
+            "label": "12"
         }
     ]
 }
