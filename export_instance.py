@@ -57,8 +57,6 @@ for route in scenario["routes"]:
             nodes.append({'id': str(route["id"])+from_node_id(path, route_section, i), 'label': from_node_id(path, route_section, i), 'color': id_to_color(route["id"]), 'shape': 'ellipsis'})
             nodes.append({'id': str(route["id"])+to_node_id(path, route_section, i), 'label': to_node_id(path, route_section, i), 'color': id_to_color(route["id"]), 'shape': 'ellipsis'})
 
-
-
 # removes duplicate nodes
 nodes = list({v['id']: v for v in nodes}.values())
 

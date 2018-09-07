@@ -35,8 +35,11 @@
 <div id="mynetwork" style="width: 100%; height: 100%; min-height: 100%; "></div>
 
 <script type="text/javascript">
+  var PROGRESSIVE_DAMPING = false
+
   window.onload = function () {
-    var container = document.getElementById('mynetwork')
+    var containerEl = $('#mynetwork').get(0)
+    var configEl = $('#config').get(0)
 
     $.getJSON('network1.json', function (networkData) {
       var data = {
@@ -44,156 +47,63 @@
         edges: networkData.edges,
       }
 
-      var options = {
+      // We first render the graph hierarchically, then relax the hierarchical constraint.
+      // This considerably speeds up stabilization.
+      var initialOptions = {
         'layout': {
           'hierarchical': {
             'enabled': true,
             sortMethod: 'directed',
           },
         },
-        /*'physics': {
-          stabilization: {
-            iterations: 3,
-            updateInterval: 1,
-          },
-        },*/
 
         'configure': {
           'enabled': true,
-          'container': $('#config').get(0),
+          'container': configEl,
           'filter': 'physics',
         },
       }
 
-      var network = new vis.Network(container, data, options)
-      /*network.setOptions({
-        edges: {hidden: true, smooth: false}
-      })*/
+      var finalOptions = {
+        layout: {hierarchical: false},
+        'physics': {
+          'barnesHut': {
+            'gravitationalConstant': -110920,
+            'centralGravity': 5,
+            'springLength': 30,
+            'springConstant': 0.6,
+            'damping': 0.4,
+            'avoidOverlap': 0.28,
+          },
+          'minVelocity': 0.75,
+          'timestep': 0.6,
+        },
+      }
+
+      var network = new vis.Network(containerEl, data, initialOptions)
 
       network.on('stabilizationIterationsDone', function () {
+        console.log('stabilizationIterationsDone')
+        setTimeout(function () {network.setOptions(finalOptions)}, 500)
 
-        console.log('Ready for physics!')
-        //return
-
-        setTimeout(function () {
-          network.setOptions({
-            //edges: {hidden: true},
-            //nodes: {hidden: true},
-            layout: {hierarchical: false},
-            'physics': {
-              'barnesHut': {
-                'gravitationalConstant': -110920,
-                'centralGravity': 5,
-                'springLength': 30,
-                'springConstant': 0.6,
-                'damping': 0.4,
-                'avoidOverlap': 0.28,
+        if (PROGRESSIVE_DAMPING) {
+          var damping = 0.01
+          setInterval(function () {
+            damping += 0.0005
+            //console.log(damping)
+            network.setOptions({
+              'physics': {
+                'barnesHut': {
+                  'damping': damping,
+                },
               },
-              'minVelocity': 0.75,
-              'timestep': 0.6,
-            },
-          })
-        }, 500)
-
-        setTimeout(function () {
-          network.setOptions({
-            edges: {hidden: false},
-            nodes: {hidden: false},
-          })
-        }, 150 * 1000)
-
-        /*var damping = 0.01
-        setInterval(function() {
-          damping += 0.0005
-          //console.log(damping)
-          network.setOptions({
-            "physics": {
-              "barnesHut": {
-                "damping": damping
-              }
-            }
-          })
-        }, 500)*/
+            })
+          }, 500)
+        }
       })
     })
-
-    /*var clusterIndex = 0;
-    var clusters = [];
-    var lastClusterZoomLevel = 0;
-    var clusterFactor = 0.9;
-
-    // set the first initial zoom level
-    network.once('initRedraw', function() {
-      if (lastClusterZoomLevel === 0) {
-        lastClusterZoomLevel = network.getScale();
-      }
-    });
-
-    // we use the zoom event for our clustering
-    network.on('zoom', function (params) {
-      if (params.direction == '-') {
-        if (params.scale < lastClusterZoomLevel*clusterFactor) {
-          makeClusters(params.scale);
-          lastClusterZoomLevel = params.scale;
-        }
-      }
-      else {
-        openClusters(params.scale);
-      }
-    });
-
-    // if we click on a node, we want to open it up!
-    network.on("selectNode", function (params) {
-      if (params.nodes.length == 1) {
-        if (network.isCluster(params.nodes[0]) == true) {
-          network.openCluster(params.nodes[0])
-        }
-      }
-    });
-
-
-    // make the clusters
-    function makeClusters(scale) {
-      var clusterOptionsByData = {
-        processProperties: function (clusterOptions, childNodes) {
-          clusterIndex = clusterIndex + 1;
-          var childrenCount = 0;
-          for (var i = 0; i < childNodes.length; i++) {
-            childrenCount += childNodes[i].childrenCount || 1;
-          }
-          clusterOptions.childrenCount = childrenCount;
-          clusterOptions.label = "# " + childrenCount + "";
-          clusterOptions.font = {size: childrenCount*5+30}
-          clusterOptions.id = 'cluster:' + clusterIndex;
-          clusters.push({id:'cluster:' + clusterIndex, scale:scale});
-          return clusterOptions;
-        },
-        clusterNodeProperties: {borderWidth: 3, shape: 'database', font: {size: 30}}
-      }
-      console.log(clusterOptionsByData)
-      //network.clusterOutliers(clusterOptionsByData);
-      network.clusterByHubsize();
-    }
-
-    // open them back up!
-    function openClusters(scale) {
-      var newClusters = [];
-      var declustered = false;
-      for (var i = 0; i < clusters.length; i++) {
-        if (clusters[i].scale < scale) {
-          network.openCluster(clusters[i].id);
-          lastClusterZoomLevel = scale;
-          declustered = true;
-        }
-        else {
-          newClusters.push(clusters[i])
-        }
-      }
-      clusters = newClusters;
-    }*/
   }
 </script>
-
 
 </body>
 </html>
